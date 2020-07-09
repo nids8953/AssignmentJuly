@@ -1,0 +1,26 @@
+
+<div class="loginForm">
+
+    <h2>Login Form</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="submitForm($event)">
+        <div class="loginFields">
+            <input type="text"  placeholder="Enter username" formControlName="username"/>
+            <div class="textalginleft" *ngIf="loginForm.get('username').errors && loginForm.get('username').dirty && loginForm.get('username').errors.required">
+                Username is required.
+            </div> 
+        </div>
+       
+        <div class="loginFields">
+            <input type="password" placeholder="Enter password" formControlName="password"/>
+            <div class="textalginleft" *ngIf="loginForm.get('password').errors && loginForm.get('password').dirty && loginForm.get('password').errors.required">
+                Password is required.
+            </div> 
+        </div>
+       <div class="loginFields loginButton">
+      
+             <button type="submit">Login</button>
+       </div>
+       <div class="errorMessage" *ngIf="errorMessage">{{errorMessage}}</div>
+    </form>
+ 
+</div>

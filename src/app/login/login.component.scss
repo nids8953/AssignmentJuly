@@ -1,0 +1,38 @@
+.loginForm 
+{
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+    form{
+        
+        margin-left:auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 18px;
+        width:350px;
+        border:solid 1px black;
+        .loginFields
+        {
+            margin-bottom: 50px;
+            margin-top: 30px;
+
+            input {
+                height:40px;
+                width:250px;
+                font-size: 18px;
+            }
+
+        }
+        .errorMessage {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color:red;
+        }
+   }
+}
+.textalginleft {
+    text-align: left;
+    padding-left: 45px;
+    padding-top: 10px;
+    color: red;
+}
